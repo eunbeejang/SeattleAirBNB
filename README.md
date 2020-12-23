@@ -50,7 +50,7 @@ Jupyter Notebook ([seattleairbnb.ipynb](https://github.com/eunbeejang/SeattleAir
 
 - The overall trend shows declining occupancy rates throughout the year 2016. This means that AirBNB renting activity in Seattle is decreasing. However, surge of rental activities are observed between April and August 2016 and there is another spike in renting activities in January 2017, which could be contributed by the end-of-the-year holiday season.
 
-- 
+- For modelling the price of listings, I utilized data columns related to the accommodation details without any host-written descriptions or image of the property. Using a linear regression model, the rsquared score for training data was 56% and 52% for testing data. This shows that the model is hard to generalize the pricing of listing properties using the data columns provided. However, when analyzed the coefficients, property type and location(neighbourhood) appears to be the main factors for pricing for given data.
 
 ### Blog
 
