@@ -31,7 +31,7 @@ We recommend students install [Anaconda](https://www.continuum.io/downloads), a 
 > For this project, I'm interested in answering following questions about Seattle AirBNB Listings.
 
 1) What types of listings are popular?
-2) When is the best time of the year to start a marketing campagn?
+2) When is the best time of the year to rent out a place?
 3) How well can we predict the price of a listing? What aspects correlate well to listing prices?
 
 ### Data
@@ -46,11 +46,12 @@ Jupyter Notebook ([seattleairbnb.ipynb](https://github.com/eunbeejang/SeattleAir
 
 
 ### Result
-- According to my analysis, the popularity of a listing is defined by type and the location of the property. The trend differs by the room_type (ie. entire place, private room, and shared room). For listings with ehtire place, most popular listings were Bed&Breakfast, Cabin, and Camper/RV located in Rainier Valley, Queen Anne, Northgate, and Ballard. For listings with private rooms, Bed&Breakfast, Cabin in Downtown and Queen Anne were popular. For shared units, apartments in University District was the most popular listing type.
+- According to my analysis, the type and location of a property define the popularity of a listing. The trend differs from the room_type (i.e. entire place, private room, and shared room). For listings with the entire place, the most popular listings were Bed&Breakfast, Cabin, and Camper/RV located in Rainier Valley, Queen Anne, Northgate, and Ballard. For listings with private rooms, Bed&Breakfast, Cabin in Downtown and Queen Anne were popular. For shared units, apartments in University District were the most popular listing type.
 
-- The overall trend shows declining occupancy rates throughout the year 2016. This means that AirBNB renting activity in Seattle is decreasing. However, surge of rental activities are observed between April and August 2016 and there is another spike in renting activities in January 2017, which could be contributed by the end-of-the-year holiday season. If Seattle AirBNB marketing team is to start a campaign, they should aim for users booking for summer vacation or near the end of the year.
+- The overall trend shows declining occupancy rates throughout the year 2016. This means that Airbnb renting activity in Seattle is decreasing. However, a surge in rental activities is observed between April and August 2016. There is another spike in renting activities in January 2017, which could be contributed by the end-of-the-year holiday season. Suppose a host is aiming to make a more significant profit in the Seattle area. In that case, they should target users booking for summer vacation or near the end of the year holiday.
 
-- For modelling the price of listings, I utilized data columns related to the accommodation details without any host-written descriptions or image of the property. Using a linear regression model, the rsquared score for training data was 56% and 52% for testing data. This shows that the model is hard to generalize the pricing of listing properties using the data columns provided. However, when analyzed the coefficients, property type and location(neighbourhood) appears to be the main factors for pricing for given data.
+- For modelling the listings' price, I utilized data columns related to the accommodation details without any host-written descriptions or images of the property. Using a linear regression model, the rsquared score for training data was 56% and 52% for testing data. This shows that the model is hard to generalize listing properties' pricing using the data columns provided. However, when analyzed, the coefficients, property type and location(neighbourhood) appears to be the main factors for pricing for given data.
+
 
 ### Blog
 
